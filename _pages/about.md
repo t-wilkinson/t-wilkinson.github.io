@@ -2,24 +2,35 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: winston.trey.wilkinson@gmail.com; (240) 274-7148
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>(240) 274-7148</p>
+    <p>Columbia, Maryland</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+# news: true # includes a list of news items
+# selected_papers: true # includes a list of papers marked as "selected={true}"
+# social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+**Versatile Full Stack Developer with 5+ Years of Experience**
+- Full-Stack Development Expertise: Proficient in React.js, Vue.js, Node.js, and TypeScript. Led end-to-end development for a high-end clothing rental e-commerce startup ("Infinite Closet"), demonstrating comprehensive skills across the technology stack.
+- Technical Leadership & Innovation: Spearheaded technology stack selection, managed databases, and implemented robust DevOps practices including Docker containerization and CI/CD pipelines on AWS and Digital Ocean.
+- Client-Centric Approach: Passionate about translating complex business requirements into efficient, scalable web solutions. Extensive freelance experience in delivering tailored websites and digital solutions for small businesses, prioritizing cost-effectiveness and client satisfaction.
+- Data-Driven Problem Solver: Contributed to AI model development through precise data annotation, leveraging React.js and Vue.js for data visualization. Applied Python, Pandas, and NumPy for data preprocessing and analysis.
+- Proven Track Record: Consistently delivered projects on time and within scope, maintaining transparent communication and adapting to diverse client needs across various industries.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+**Key Skills:**
+- Frontend: React.js, Vue.js, Next.js, JavaScript, TypeScript
+- Backend: Node.js, Express.js, PostgreSQL
+- DevOps: Docker, CI/CD, AWS, Linux
+- Data Science: Python, Pandas, NumPy
+- Soft Skills: Leadership, Strategic Planning, Client Communication, Project Management, Problem-solving
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Seeking challenging opportunities to apply my full stack development expertise and client-focused approach to create innovative, business-driving web solutions.
+
+---

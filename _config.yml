@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Trey
-middle_name: A.
+middle_name: # middle name
 last_name: Wilkinson
 email: winston.trey.wilkinson@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -132,8 +132,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: my blog # blog_name will be displayed in your blog page
+blog_description: #
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -312,8 +312,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Wilkinson]
+  first_name: [Trey, A.]
 
   style: apa
   locale: en
