@@ -3,7 +3,7 @@ layout: post
 title: Artificial Intelligence
 date: 2024-07-23 16:38:27
 description:
-tags:
+tags: ai
 categories:
 ---
 
