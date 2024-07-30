@@ -3,7 +3,7 @@ layout: post
 title: Model Architectures
 date: 2024-07-23 16:43:39
 description:
-tags:
+tags: ai
 categories:
 ---
 

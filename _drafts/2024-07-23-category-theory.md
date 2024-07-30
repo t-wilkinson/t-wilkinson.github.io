@@ -3,7 +3,7 @@ layout: post
 title: Category Theory
 date: 2024-07-23 16:40:24
 description:
-tags:
+tags: math
 categories:
 ---
 

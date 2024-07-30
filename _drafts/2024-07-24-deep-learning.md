@@ -5,6 +5,8 @@ date: 2024-07-24 14:00:45
 description:
 tags: ai
 categories:
+chart:
+  chartjs: true
 ---
 
 > Deep learning is concerned with developing algorithms that learn through insights from cognitive neurscience
@@ -18,12 +20,40 @@ Deep learning models, particularly LLM are generally over-parameterized. This al
 In a computational graph, every node knows its inputs, outputs, operation, and backpropagation.
 
 # Important equations
-- $$ J(\theta)=-\mathbb{E}_{X,Y\sim\hat{p}_{data}}[log~p_{model}(y;x,\theta)]+\lambda\Omega(\theta) $$.
-- $$ G^i := \frac{\partial J}{\partial u^j} \frac{\partial u^j}{\partial u^i} = \sum_j f^j.backprop(u^i, u^j.inputs, G^j) = \frac{\partial J}{\partial u^j} \sum_{path(u^(\pi_1=j), \ldots, u^(\pi_t=i))} \prod_{k=2}^{k=t}\frac{\partial u^{\pi_k}}{\partial u^{\pi_{k-1}}} $$.
-- $$ \theta^i \leftarrow \theta^i - \epsilon G^i $$.
-- $$ f^i(u^j)=u^i $$.
-- $$ \frac{\partial}{\partial \theta}\mathbb{E}_X [f(x,\theta)] = \frac{\partial}{\partial \theta}\int_{-\infty}^{\infty}p(x)f(x,\theta)dx = \int_{-\infty}^{\infty}p(x)\frac{\partial}{\partial \theta}f(x,\theta)dx = \mathbb{E}_X [\frac{\partial}{\partial \theta}f(x,\theta)] $$.
-    - Gradient descent can sum across the model applied to each data element, or to the model applied to the entire dataset
+
+## Loss function
+
+$$
+J(\theta)=-\mathbb{E}_{X,Y\sim\hat{p}_{data}}[log~p_{model}(y;x,\theta)]+\lambda\Omega(\theta)
+$$
+
+The standard learning function for a deep learning model. Take the models predicted assocation between data and label. Any prediction less than guaranteed is incorrect, and the negative log is taken. The less likely the model associates the data and label, the more the loss value. The model parameters $$ \theta $$ are updated relative to its contribution to the loss.
+
+## Gradient calculation
+
+$$
+G^i := \frac{\partial J}{\partial u^j} \frac{\partial u^j}{\partial u^i} = \sum_j f^j.backprop(u^i, u^j.inputs, G^j) = \frac{\partial J}{\partial u^j} \sum_{path(u^(\pi_1=j), \ldots, u^(\pi_t=i))} \prod_{k=2}^{k=t}\frac{\partial u^{\pi_k}}{\partial u^{\pi_{k-1}}}
+$$
+
+The gradient of a model for each parameter $$u^i$$ is the contribution of each parameter $$u^j$$ to the loss $$J$$, and the contribution of $$u^i$$ to $$u^j$$ ($$\frac{\partial u^j}{\partial u^i}$$).
+
+## Parameter update
+
+
+$$
+\theta^i \leftarrow \theta^i - \epsilon G^i
+$$
+
+Updating model parameters based on the learning rate $$\epsilon$$ and the gradient $$G$$.
+
+## Expectation and gradient
+
+
+$$
+\frac{\partial}{\partial \theta}\mathbb{E}_X [f(x,\theta)] = \frac{\partial}{\partial \theta}\int_{-\infty}^{\infty}p(x)f(x,\theta)dx = \int_{-\infty}^{\infty}p(x)\frac{\partial}{\partial \theta}f(x,\theta)dx = \mathbb{E}_X [\frac{\partial}{\partial \theta}f(x,\theta)]
+$$
+
+Gradient descent can sum across the model applied to each data element, or to the model applied to the entire dataset
 
 # Architecture
 - Output should be the smallest amount of structurless data that can derive data with necessary structure
