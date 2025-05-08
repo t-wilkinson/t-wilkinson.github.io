@@ -1,9 +1,8 @@
-# this file uses prebuilt image in dockerhub
 services:
   jekyll:
     image: amirpourmand/al-folio:latest
     build: .
-    restart: always
+    restart: unless-stopped
     ports:
       - 8080:8080
       - 35729:35729
