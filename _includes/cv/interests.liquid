@@ -4,6 +4,18 @@
 
 <div class="card-text font-weight-light">
   {% for entry in entries %}
+    <div class="cv-pill">
+      {% if entry.icon %}
+        <i class="{{ entry.icon }}"></i>
+      {% endif %}
+      <strong>{{ entry.name }}</strong>
+    </div>
+  {% endfor %}
+</div>
+
+{% comment %}
+<div class="card-text font-weight-light">
+  {% for entry in entries %}
     <div class="interest-item">
       {% if entry.icon %}
         <i class="{{ entry.icon }}"></i>
@@ -21,6 +33,7 @@
     </div>
   {% endfor %}
 </div>
+{% endcomment %}
 
 <style>
   .interest-item {

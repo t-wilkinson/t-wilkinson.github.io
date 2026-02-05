@@ -36,5 +36,19 @@ Seeking challenging opportunities to apply my full stack development expertise a
 
 ---
 
-https://github.com/t-wilkinson/nixos-config
+## My favorite projects
 
+{% assign sorted_projects = site.projects | sort: "importance" %}
+
+{% for project in sorted_projects %}
+  <div style="margin-bottom: 10px;">
+    <a href="{{ project.url | relative_url }}" style="font-weight: bold;">
+      {{ project.title }}
+    </a>
+    {% if project.github %}
+      <a href="{{ project.github }}" target="_blank" style="margin-left: 10px; color: gray;">
+        <i class="fab fa-github"></i>
+      </a>
+    {% endif %}
+  </div>
+{% endfor %}

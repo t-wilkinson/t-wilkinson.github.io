@@ -2,30 +2,61 @@
   Unified projects entry renderer for both formats
 {% endcomment %}
 
-<ul class="card-text font-weight-light list-group list-group-flush">
+<div class="projects-container">
   {% for entry in entries %}
-    <li class="list-group-item">
-      {% if entry.url %}
-        <h6 class="title font-weight-bold">
-          <a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a>
-        </h6>
-      {% else %}
-        <h6 class="title font-weight-bold">{{ entry.name }}</h6>
-      {% endif %}
+    <div class="project-card mb-4">
+      <div class="project-header d-flex justify-content-between align-items-baseline">
+        <h5 class="font-weight-bold">
+          {% if entry.url %}
+            <a href="{{ entry.url }}" target="_blank">{{ entry.name }} <i class="fas fa-external-link-alt fa-xs"></i></a>
+          {% else %}
+            {{ entry.name }}
+          {% endif %}
+        </h5>
+      </div>
 
       {% if entry.summary %}
-        <p>{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        <p class="project-summary mt-2 text-justify">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
       {% endif %}
 
       {% if entry.highlights %}
-        <ul class="items">
+        <ul class="project-highlights">
           {% for item in entry.highlights %}
-            <li>
-              <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
-            </li>
+            <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
           {% endfor %}
         </ul>
       {% endif %}
-    </li>
+
+      {% if entry.keywords %}
+        <div class="project-tech-stack mt-2">
+          {% for tech in entry.keywords %}
+            <span class="tech-tag">{{ tech }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
   {% endfor %}
-</ul>
+</div>
+
+<style>
+  .project-card {
+    padding: 1rem;
+    border-left: 3px solid var(--global-theme-color);
+    background-color: var(--global-card-bg-color);
+  }
+  .project-highlights {
+    font-size: 0.9rem;
+    padding-left: 1.2rem;
+    color: var(--global-text-color-light);
+  }
+  .tech-tag {
+    font-size: 0.75rem;
+    background: var(--global-theme-color);
+    color: var(--global-hover-text-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+    display: inline-block;
+  }
+</style>
+

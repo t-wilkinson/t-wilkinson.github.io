@@ -5,7 +5,10 @@ description: A Neovim plugin featuring a notification server and calendar synchr
 img:
 importance: 2
 category: fun
+github: https://github.com/t-wilkinson/zortex.nvim
 ---
+
+{% include project.liquid %}
 
 **zortex.nvim** is a custom Neovim plugin designed to enhance the development workflow through better information management.
 

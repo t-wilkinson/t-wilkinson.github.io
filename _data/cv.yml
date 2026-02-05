@@ -2,9 +2,11 @@ cv:
   name: Winston Wilkinson
   label: Software Engineer
   email: winston.trey.wilkinson@gmail.com
-  location: Columbia, MD
   image: ""
-  summary: Dedicated Software Engineer with extensive experience in full-stack development, specializing in React, Node.js, and DevOps. Proven track record of delivering scalable solutions and leading technical projects from conception to deployment.
+  summary: >
+    Versatile Full Stack Developer with 6+ years of experience delivering scalable web solutions, from high-end e-commerce startups to custom freelance projects.
+    Experience in React, Node.js, and PostgreSQL backed by reliable implementation of DevOps pipelines (AWS/Docker/NixOS).
+    A problem solver experienced in technical leadership, dedicated to translating business requirements to digital products.
 
   social_networks:
     - network: GitHub
@@ -14,8 +16,8 @@ cv:
 
   address:
     # street: ""
-    city: Columbia
-    region: Maryland
+    city: Manakin-Sabot
+    region: Virginia
     # postalCode: ""
     countryCode: US
 
@@ -33,11 +35,22 @@ cv:
         highlights: []
 
     Experience:
+      - company: Pho One-O
+        position: Restaurant Server
+        location: Odenton, Maryland
+        start_date: 2024-09
+        end_date: 2025-11
+        summary: ""
+        highlights:
+          - Onboarded restaurant manager, conveyed our standards, taught him all the roles they would need to play, etc.
+          - Assisted in hiring and training new members of our team, taught them standards and tricks to do their jobs effectively, transferred adherence to our high standards.
+          - Excelled in high-paced environment, served and interacted with customers, maintained a positive and professional environment, established positive relationships with customers.
+          - Reliable work ethic, opened the restaurant in the morning, closed the restaurant in the evening.
       - company: Data Annotation
         position: Data Annotator
         location: Remote
-        start_date: 2024-04-01
-        end_date: Present
+        start_date: 2024-04
+        end_date: 2025-06
         summary: Applied Python, Pandas, and NumPy for data processing and analysis. Contributed to AI model development through precise data annotation.
         highlights:
           - Demonstrated proficiency in various programming languages and JavaScript frameworks.
@@ -46,8 +59,8 @@ cv:
       - company: Freelance Web Developer
         position: Full Stack Developer
         location: Remote
-        start_date: 2023-03-01
-        end_date: Present
+        start_date: 2023-03
+        end_date: 2024-06
         summary: Continued freelance work, focusing on full-stack web development and scalable solutions.
         highlights:
           - Maintained client communication and delivered solutions using React.js, Vue.js, Node.js, and Express.js.
@@ -56,8 +69,8 @@ cv:
       - company: Infinite Closet
         position: Senior Software Engineer
         location: Remote
-        start_date: 2021-02-01
-        end_date: 2023-01-01
+        start_date: 2021-02
+        end_date: 2023-01
         summary: Led development of an e-commerce startup's website.
         highlights:
           - Built frontend using React.js, Next.js, and TypeScript.
@@ -67,24 +80,56 @@ cv:
       - company: Freelance Web Developer
         position: Full Stack Developer
         location: Remote
-        start_date: 2019-12-01
-        end_date: 2021-01-01
+        start_date: 2019-12
+        end_date: 2021-01
         highlights:
           - Developed and deployed full-stack web applications using React.js and Vue.js.
           - Implemented CI/CD pipelines on AWS.
 
       - company: Wells Window Cleaning
         position: Window Cleaner
-        location: Washington Metropolitan Area
+        location: DMV Area
         start_date: 2016-05-01
         end_date: 2020-11-01
         summary: Employed attention to detail, precision, and customer service for high-end residential houses.
 
+    Projects:
+      - name: Infinite Closet E-Commerce Platform
+        url: https://github.com/t-wilkinson/infinite-closet
+        summary: Owned the end-to-end development of a full-stack clothing rental platform, delivering a scalable solution from backend architecture to frontend UI.
+        highlights:
+          - Engineered a modular system supporting **35,000+ lines of code** with 3rd-party integrations for Hived, ACS, and Stripe.
+          - Built a non-technical friendly Admin Panel for content management and a complex date-selection booking engine.
+          - Implemented a robust DevOps pipeline using Docker Compose and GitHub Actions for automated testing and deployment.
+        keywords: ["Next.js", "Strapi", "PostgreSQL", "Docker", "Cypress", "Stripe"]
+
+      - name: zortex.nvim
+        url: https://github.com/t-wilkinson/zortex.nvim
+        summary: Developed a specialized Neovim plugin for notification management and calendar synchronization.
+        highlights:
+          - Built a custom notification server with seamless calendar integration.
+          - Created a dedicated NixOS module and systemd service to manage background processes.
+          - Integrated the plugin within a LazyVim ecosystem for enhanced developer workflow.
+        keywords: ["Lua", "Neovim API", "NixOS", "Systemd", "LazyVim"]
+
+      - name: NixOS Homelab Configuration
+        url: https://github.com/t-wilkinson/nixos-config
+        summary: Designed and maintained a declarative infrastructure-as-code repository for a NixOS-based homelab.
+        highlights:
+          - Automated the deployment of self-hosted services including Nextcloud, Vaultwarden, and monitoring tools.
+          - Configured and optimized Minecraft servers for multi-user environments.
+          - Implemented modular Nix configurations to ensure reproducible system states across multiple hosts.
+        keywords: ["Nix", "NixOS", "Self-Hosting", "DevOps", "Linux", "Systemd", "System administration"]
+
     Skills:
+      - name: NixOS
+        level: Master
       - name: JavaScript
         level: Master
         icon: fa-brands fa-js
-        keywords: infinite-closet
+        repos:
+          - infinite-closet
+          - nixos-config
       - name: React
         level: Master
         icon: fa-brands fa-react
@@ -111,5 +156,7 @@ cv:
         icon: fa-solid fa-brain
       - name: Computers
         icon: fa-solid fa-laptop-code
-      - name: Brazilian Jiu-Jitsu
-        icon: fa-solid fa-hand-fist
+      - name: Rock Climbing
+        icon: fa-solid fa-mountain-sun
+      - name: Category Theory
+        icon: fa-solid fa-diagram-project
