@@ -136,9 +136,6 @@ cv:
       - name: JavaScript
         level: Master
         icon: fa-brands fa-js
-        repos:
-          - infinite-closet
-          - nixos-config
       - name: React
         level: Master
         icon: fa-brands fa-react
