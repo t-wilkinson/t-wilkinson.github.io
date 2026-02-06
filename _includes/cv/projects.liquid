@@ -29,7 +29,7 @@
 
       {% if entry.keywords %}
         <div class="project-tech-stack mt-2">
-          {% for tech in entry.keywords %}
+          {% for tech in entry.keywords | split: ',' %}
             <span class="tech-tag">{{ tech }}</span>
           {% endfor %}
         </div>

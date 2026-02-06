@@ -110,7 +110,7 @@ cv:
           - Engineered a modular system supporting **35,000+ lines of code** with 3rd-party integrations for Hived, ACS, and Stripe.
           - Built a non-technical friendly Admin Panel for content management and a complex date-selection booking engine.
           - Implemented a robust DevOps pipeline using Docker Compose and GitHub Actions for automated testing and deployment.
-        keywords: ["Next.js", "Strapi", "PostgreSQL", "Docker", "Cypress", "Stripe"]
+        keywords: "Next.js,Strapi,PostgreSQL,Docker,Cypress,Stripe"
 
       - name: zortex.nvim
         url: https://github.com/t-wilkinson/zortex.nvim
@@ -119,7 +119,7 @@ cv:
           - Built a custom notification server with seamless calendar integration.
           - Created a dedicated NixOS module and systemd service to manage background processes.
           - Integrated the plugin within a LazyVim ecosystem for enhanced developer workflow.
-        keywords: ["Lua", "Neovim API", "NixOS", "Systemd", "LazyVim"]
+        keywords: "Lua,Neovim API,NixOS,Systemd,LazyVim"
 
       - name: NixOS Homelab Configuration
         url: https://github.com/t-wilkinson/nixos-config
@@ -128,7 +128,7 @@ cv:
           - Automated the deployment of self-hosted services including Nextcloud, Vaultwarden, and monitoring tools.
           - Configured and optimized Minecraft servers for multi-user environments.
           - Implemented modular Nix configurations to ensure reproducible system states across multiple hosts.
-        keywords: ["Nix", "NixOS", "Self-Hosting", "DevOps", "Linux", "Systemd", "System administration"]
+        keywords: "Nix,NixOS,Self-Hosting,DevOps,Linux,Systemd,System administration"
 
     Skills:
       - name: NixOS
