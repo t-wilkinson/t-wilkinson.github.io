@@ -23,11 +23,20 @@ cv:
 
   sections:
     Education:
+      - institution: Western Governers University
+        location: Staunton, VA
+        area: Computer Science
+        studyType: ""
+        start_date: 2025-06
+        end_date: PRESENT
+        score: ""
+        courses: []
+        highlights: []
+
       - institution: Mary Baldwin University
         location: Staunton, VA
-        url: ""
-        area: Computer Science
-        studyType: Mathematics
+        area: Mathematics
+        studyType: ""
         start_date: 2018
         end_date: 2019
         score: ""
