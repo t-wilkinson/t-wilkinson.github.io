@@ -28,7 +28,7 @@ cv:
         area: Computer Science
         studyType: ""
         start_date: 2025-06
-        end_date: present
+        end_date: 2026-06
         score: ""
         courses: ""
         highlights: []
@@ -166,3 +166,5 @@ cv:
         icon: fa-solid fa-mountain-sun
       - name: Category Theory
         icon: fa-solid fa-diagram-project
+      - name: Automotive Mechanic
+        icon: fa-solid fa-car

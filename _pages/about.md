@@ -17,7 +17,7 @@ profile:
 # social: true # includes social icons at the bottom of the page
 ---
 
-**Versatile Full Stack Developer with 6+ Years of Experience**
+**Versatile Full Stack Developer with 7+ Years of Experience**
 - Homelab Proficiency: Built reliable homelab server for family members prioritizing reliability, security, and ease-of-use.
 - Full-Stack Development Expertise: Proficient in React.js, Vue.js, Node.js, and TypeScript. Led end-to-end development for a high-end clothing rental e-commerce startup ("Infinite Closet"), demonstrating comprehensive skills across the technology stack.
 - Technical Leadership & Innovation: Spearheaded technology stack selection, managed databases, and implemented robust DevOps practices including Docker containerization and CI/CD pipelines on AWS and Digital Ocean.

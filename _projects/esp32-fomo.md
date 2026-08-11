@@ -5,6 +5,7 @@ description: "An end-to-end edge ML pipeline integrating a custom FOMO object de
 date: 2026-08-11
 categories: [Portfolio, Projects]
 img: /assets/img/esp32-fomo/graph.png
+github: https://github.com/t-wilkinson/projects/tree/main/ai/esp32-pc-object-detection
 tags: [Robotics, Edge AI, Rust, Computer Vision, Embedded Systems, Machine Learning]
 ---
 
