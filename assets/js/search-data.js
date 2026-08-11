@@ -46,7 +46,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-infinite-closet-e-commerce-platform",
+          section: "News",},{id: "projects-autonomous-target-tracking-edge-ai-on-the-esp32-cam",
+          title: 'Autonomous Target Tracking: Edge AI on the ESP32-CAM',
+          description: "An end-to-end edge ML pipeline integrating a custom FOMO object detection model, C++ inference, and Rust-based networking to guide a robotic vehicle.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/esp32-fomo/";
+            },},{id: "projects-infinite-closet-e-commerce-platform",
           title: 'Infinite Closet E-Commerce Platform',
           description: "A full-stack clothing rental platform showcasing end-to-end development lifecycle management.",
           section: "Projects",handler: () => {
