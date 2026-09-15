@@ -10,6 +10,10 @@ tags: [Robotics, Edge AI, Rust, Computer Vision, Embedded Systems, Machine Learn
 ---
 
 ## Project Overview
+<div class="icon" style="margin-bottom: 0.5rem;" data-toggle="tooltip" title="Code Repository">
+  <a href="{{ page.github }}"><i class="fa-brands fa-github gh-icon"></i> {{ page.github }}</a>
+</div>
+
 <div style="width: 100%; margin-bottom: 20px;">
 {% include figure.liquid
 path="/assets/img/esp32-fomo/graph.png"
